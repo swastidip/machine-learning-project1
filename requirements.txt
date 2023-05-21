@@ -3,4 +3,4 @@
   pandas
   gunicorn
   sklearn
-  
+  -e .
