@@ -1,41 +1,43 @@
 from setuptools import setup
 from typing import List
 
-#Declaring variables for setup function
 
+#declaring variables for setup function
 
-
-PROJECT_NAME="housing-predictor"
+PROJECT_NAME="housing_predictror"
 VERSION="0.0.1"
-AUTHOR="Swastidip"
-DESCRIPTION="This is a  machine learnig project on regression"
+AUTHOR="swastidip sahoo"
+DESCRIPTION="machine learning project"
 PACKAGES=["housing"]
 REQUIREMENTS_FILE_NAME="requirements.txt"
 
 
+
 def get_requirements_list()->List[str]:
     """
-      Description:this function returns requirements mentioned in requirements.txt file
-      
-      return This function is going to return a list which contain name of library mentioned
-      in requirements.txt
+    Description: This funcn is going to return list of requirements 
+    mentioned in requiremnts.txt file
 
-      """
+    return This function returns name of libraries mentioned in 
+    requirements.txt
+
+    """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        requirement_file.readlines() 
-    
+        return requirement_file.readline()
+
+
+
+
+
+
 
 
 setup(
-name=PROJECT_NAME,
-version=VERSION,
-author=AUTHOR,
-description=DESCRIPTION,
-packages=PACKAGES,
-install_requires=get_requirements_list()
 
-
-    )
-
-
-
+    name=PROJECT_NAME,
+    version=VERSION,
+    author=AUTHOR,
+    description=DESCRIPTION,
+    packages=PACKAGES,
+    install_requires=get_requirements_list()
+)
